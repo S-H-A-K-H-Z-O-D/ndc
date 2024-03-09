@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Kanit-Bold';
+  src: url('../public/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('woff2')
+}
+
+.kanit-bold{
+  font-family: 'Kanit-Bold', sans-serif;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 15, 15, 15;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,8 +20,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 15, 15, 15;
+    --background-end-rgb: 15, 15, 15;
   }
 }
 
@@ -24,10 +33,343 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.animated-button {
+  border-radius: 9px;
+  box-shadow: 0 8px 69px 0 rgba(161,80,227,.58);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.boxShadow{
+  box-shadow: 0 8px 69px 0 rgba(161,80,227,.58);
+}
+
+.animated-button::after{
+  content: '';
+  width: 250px;
+  height: 200px;
+  background: url('../public/images/flame.gif') no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  z-index: -2;
+  top: -40px;
+  left:0;
+}
+
+.animated-button::before{
+  content: '';
+  width: 250px;
+  height: 200px;
+  background: #a050e2;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .animated-button::after{
+    content: '';
+    width: 1250px;
+    height: 1200px;
+    background: url('../public/images/flame.gif') no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    z-index: -2;
+    top: -40px;
+    left:0;
+  }
+
+  .animated-button::before{
+    content: '';
+    width: 1250px;
+    height: 1200px;
+    background: #a050e2;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
   }
 }
+
+.hero{
+  position: relative;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  background: url("../public/images/flame.gif");
+  border-radius: 100%;
+  top: 100px;
+  z-index: 0;
+  right: 300px;
+}
+
+@media screen and (max-width: 1450px) {
+  .hero::before{
+    background: url("../public/images/flame.gif");
+    border-radius: 100%;
+    top: 100px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero::before{
+    background: url("../public/images/flame.gif");
+    border-radius: 100%;
+    top: 100px;
+    right: 30px;
+  }
+}
+
+/*.hero::before{*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  width: 800px;*/
+/*  height: 500px;*/
+/*  background: url("../public/images/line3.gif") no-repeat 100% 100%;*/
+/*}*/
+
+.imageGallery {
+  display: flex;
+  position: relative;
+  height: 100px;
+  /*max-width: 700px;*/
+}
+
+.galleryImageContainer {
+  position: relative;
+  border: 4px solid white;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  margin-right: -10px; /* Adjusted overlapping */
+  transition: all 0.4s ease;
+}
+
+.galleryImageContainer.enlarged {
+  width: 150px;
+  height: 150px;
+  top: -25px;
+}
+
+@media screen and (max-width: 1300px) {
+  .imageGallery {
+    display: flex;
+    position: static;
+    height: auto;
+    /*max-width: 700px;*/
+  }
+
+  .galleryImageContainer {
+    position: static;
+    border: 4px solid white;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    margin-right: -10px; /* Adjusted overlapping */
+    transition: none;
+  }
+
+  .galleryImageContainer.enlarged {
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
+}
+
+/**************************************************************/
+
+/*#app { height: 100% }*/
+/*html,*/
+.swiperWrapper {
+  position: relative;
+  height: 100%;
+}
+
+.swiperWrapper {
+  /*background: #eee;*/
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiperWrapper {
+  /*background: #fff;*/
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/*html,*/
+.swiperWrapper {
+  position: relative;
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 550px;
+  height: 350px;
+}
+
+@media screen and (max-width: 720px) {
+  .swiper {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .swiper {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .swiper {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .swiper {
+    width: 250px;
+    height: 180px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/***********************************************/
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 0;
+}
+
+.spinner {
+  width: 13px;
+  height: 13px;
+  animation: spin 3s linear infinite; /* Apply spinning animation */
+}
+
+.bigSpinner {
+  width: 90px;
+  height: 90px;
+  animation: spin 6s linear infinite; /* Apply spinning animation */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); /* Rotate the SVG 360 degrees */
+  }
+}
+
+.mobile_nav {
+  position: fixed;
+  top: 0;
+  z-index: 5!important;
+  transition: transform 0.5s ease;
+}
+
+.mobile_offer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5!important;
+  transition: transform 0.5s ease;
+  overflow: auto;
+}
+
+.content-open {
+  transform: translateX(0);
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.react-language-select-dropdown {
+  background-color: black; /* Set background color to black */
+}
+
+.react-language-select-option,
+.react-language-select-selected {
+  color: white; /* Set text color to white */
+}
+
+
+
+
+
+
+
+
+
+
+
+
