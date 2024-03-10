@@ -3,12 +3,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images }: any) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <div className="imageGallery max-[920px]:flex-wrap">
-            {images.map((image, index) => (
+            {images.map((image: any, index: any) => (
                 <div
                     key={index}
                     className={`galleryImageContainer ${hoveredIndex === index ? 'enlarged' : ''}`}

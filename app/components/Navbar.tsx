@@ -10,14 +10,12 @@ import MobileNavbar from "@/app/components/MobileNavbar";
 import Link from "next/link";
 import {FaChevronDown} from "react-icons/fa6";
 import {IoChevronDown} from "react-icons/io5";
-import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false)
     const [isOpen, setIsOpen] = useState(false);
     const [currentLang, setCurrentLang] = useState('Ru')
-    const {t} = useTranslation('hero')
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -31,7 +29,7 @@ const Navbar = () => {
         setModalIsOpen(false);
     };
 
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId:any) => {
         const section = document.getElementById(sectionId);
         if (section) {
             window.scrollTo({
@@ -41,7 +39,7 @@ const Navbar = () => {
         }
     };
 
-    function onLang(lang) {
+    function onLang(lang:any) {
         setCurrentLang(lang)
         setIsOpen(false)
     }
@@ -88,7 +86,7 @@ const Navbar = () => {
 
                             </li>
                             <li className="text-[18px] cursor-pointer">
-                                <div onClick={() => scrollToSection('obout')}>{t('title')}</div>
+                                <div onClick={() => scrollToSection('obout')}>Агентство</div>
                             </li>
                             <li className="text-[18px] cursor-pointer">
                                 <div onClick={() => scrollToSection('ourworks')}>Работы</div>

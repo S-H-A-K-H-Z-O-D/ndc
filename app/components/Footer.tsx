@@ -9,7 +9,7 @@ import {GoArrowRight} from "react-icons/go";
 import React from "react";
 
 const Footer = () => {
-    const scrollToSection = (sectionId) => {
+    const scrollToSection = (sectionId: any) => {
         const section = document.getElementById(sectionId);
         if (section) {
             window.scrollTo({
@@ -72,7 +72,7 @@ const Footer = () => {
             <div className="mt-16 min-[1040px]:hidden">
                 <WarningWindow/>
                 <div className="mt-6">
-                    <iframe width="100%" height="500" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"
+                    <iframe width="100%" height="500" frameBorder="0" scrolling="no"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=navroz%20parki+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                     </iframe>
                 </div>

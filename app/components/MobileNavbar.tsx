@@ -4,7 +4,11 @@ import Image from "next/image";
 import {BiLogoTelegram} from "react-icons/bi";
 import {GoArrowRight} from "react-icons/go";
 
-const MobileNavbar = ({ setIsMobile, showContent }) => {
+interface MobileNavbarProps {
+    setIsMobile: any
+    showContent: boolean
+}
+const MobileNavbar = ({ setIsMobile, showContent }:MobileNavbarProps) => {
     const [lang, setLang] = useState('ru');
 
     return (

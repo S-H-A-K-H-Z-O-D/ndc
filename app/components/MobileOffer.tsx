@@ -34,7 +34,12 @@ const reasons = [
     {title: 'Привлечение новых партнеров', text: 'Только постоянный приток новых деловых партнеров позволяет компании постоянно развиваться. На сайте могут размещаться инвестиционные предложения, программы для дилеров.'}
 ]
 
-const MobileOffer = ({ showContent, closeModal }) => {
+interface MobileOfferProps {
+    closeModal: any
+    showContent: boolean
+}
+
+const MobileOffer = ({ showContent, closeModal }:MobileOfferProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = () => {

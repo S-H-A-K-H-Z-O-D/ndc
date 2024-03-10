@@ -29,7 +29,12 @@ const customStyles = {
     }
 };
 
-const OrderModal = ({ isOpen, closeModal }) => {
+interface OrderModalProps {
+    isOpen: boolean;
+    closeModal: any
+}
+
+const OrderModal = ({ isOpen, closeModal }:OrderModalProps) => {
     return (
         <Modal
             isOpen={isOpen}

@@ -4,7 +4,6 @@ import About from "@/app/components/About";
 import Offer from "@/app/components/Offer";
 import OurWorks from "@/app/components/OurWorks";
 import Footer from "@/app/components/Footer";
-import "../18n"
 
 export default function Home() {
   return (

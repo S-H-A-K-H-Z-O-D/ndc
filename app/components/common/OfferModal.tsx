@@ -1,5 +1,6 @@
 "use client"
 
+// @ts-nocheck
 import React, {useState} from 'react';
 import Modal from 'react-modal';
 import Button from "@/app/components/common/Button";
@@ -7,7 +8,7 @@ import EffectCards from "@/app/components/common/EffectCards";
 import OrderModal from "@/app/components/common/OrderModal";
 import WarningWindow from "@/app/components/common/WarningWindow";
 
-const customStyles = {
+const customStyles: any = {
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0)',
         zIndex: '11',
@@ -62,7 +63,11 @@ const reasons = [
     {title: 'Привлечение новых партнеров', text: 'Только постоянный приток новых деловых партнеров позволяет компании постоянно развиваться. На сайте могут размещаться инвестиционные предложения, программы для дилеров.'}
 ]
 
-const OfferModal = ({ isOpen, closeModal }) => {
+interface OfferModalProps {
+    isOpen: boolean;
+    closeModal: any
+}
+const OfferModal = ({ isOpen, closeModal }:OfferModalProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = () => {

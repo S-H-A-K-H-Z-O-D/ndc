@@ -9,10 +9,9 @@ import {useState} from "react";
 interface ServiceCardProps {
     text: string
     title: string
-    onClick: () => void
 }
 
-const ServiceCard = ({text, title, onClick}: ServiceCardProps) => {
+const ServiceCard = ({text, title}: ServiceCardProps) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
