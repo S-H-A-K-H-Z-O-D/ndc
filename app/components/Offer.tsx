@@ -18,7 +18,12 @@ import MobileOffer from "@/app/components/MobileOffer";
 const Offer = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [offerModalIsOpen, setOfferModalIsOpen] = useState(false);
-    const isOfferModal = window.innerWidth > 1460;
+    let isOfferModal = false; // Initialize with a default value
+
+    if (typeof window !== 'undefined') {
+        // Check if window is defined (i.e., in the client-side context)
+        isOfferModal = window.innerWidth > 1460;
+    }
     const openModal = () => {
         setModalIsOpen(true);
     };
