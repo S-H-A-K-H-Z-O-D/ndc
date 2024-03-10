@@ -18,7 +18,7 @@ export default function CardSwiper() {
             >
                 <SwiperSlide>
                     <Image
-                        src="/images/swiper1.jpg"
+                        src="/images/swiper1.webp"
                         alt="Vercel Logo"
                         width={550}
                         height={350}
@@ -27,7 +27,7 @@ export default function CardSwiper() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/images/swiper2.jpg"
+                        src="/images/swiper2.webp"
                         alt="Vercel Logo"
                         width={550}
                         height={350}
@@ -36,7 +36,7 @@ export default function CardSwiper() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/images/swiper3.jpg"
+                        src="/images/swiper3.jpeg"
                         alt="Vercel Logo"
                         width={550}
                         height={350}

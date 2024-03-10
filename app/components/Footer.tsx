@@ -51,21 +51,23 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex px-64 justify-between w-full border-t border-neutral-600 py-8">
-                    <p className="text-[18px] text-neutral-600">©2023 Все права защищены.</p>
+                <div className="px-2 w-full border-t border-neutral-600 py-8">
+                    <div className="max-w-[1420px] mx-auto flex justify-between w-full">
+                        <p className="text-[18px] text-neutral-600">©2023 Все права защищены.</p>
 
-                    <div className="w-[300px]">
-                        <ul className="flex justify-between items-center text-neutral-600">
-                            <li className="text-[18px]">
-                                <a href="#">Facebook</a>
-                            </li>
-                            <li className="text-[18px]">
-                                <a href="#">Instagram</a>
-                            </li>
-                            <li className="text-[18px]">
-                                <a href="#">Telegram</a>
-                            </li>
-                        </ul>
+                        <div className="w-[300px]">
+                            <ul className="flex justify-between items-center text-neutral-600">
+                                <li className="text-[18px]">
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li className="text-[18px]">
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li className="text-[18px]">
+                                    <a href="#">Telegram</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

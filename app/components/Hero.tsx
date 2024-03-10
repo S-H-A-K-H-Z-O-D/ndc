@@ -20,7 +20,7 @@ const Hero = () => {
         setModalIsOpen(false);
     };
     return (
-        <div className={'px-64 h-[500px] flex flex-col justify-between mt-32 hero max-[1450px]:px-12 max-[1040px]:mt-20 max-[600px]:px-2'}>
+        <div className={'max-w-[1420px] mx-auto px-2 h-[500px] flex flex-col justify-between mt-32 hero max-[1450px]:px-12 max-[1040px]:mt-20 max-[600px]:px-2'}>
             <div className="max-[1040px]:flex max-[1040px]:flex-col justify-between max-[1040px]:h-full">
                 <div className="max-[1040px]:hidden">
                     <p className="text-[62px] kanit-bold font-bold">Разработка сайта с продающим</p>

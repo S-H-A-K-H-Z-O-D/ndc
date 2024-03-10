@@ -1,8 +1,15 @@
 {
+  "navbar": {
+    "agentlik": "Agentlik",
+    "ishlar": "Ishlar",
+    "vebSaytlarniIshlabChiqish": "Veb-saytlarni ishlab chiqish",
+    "mobilIlova": "Mobil ilova",
+    "biznesniAvtomatlashtirish": "Biznesni avtomatlashtirish",
+    "murakkabQadoqlash": "Murakkab qadoqlash",
+    "bepulKonsultatsiyaOlish": "Bepul konsultatsiya olish"
+  },
   "hero": {
-    "title": "Innovatsion yechimlarni taqdim etadi\n",
-    "startBtn": "Boshladik\n",
-    "connectBtn": "Aloqa\n",
-    "LoansAndBonus": "Xonadon va yakka tartibdagi uylarni energiya tejamkor ta'mirlash uchun kredit va bonuslar\n"
+    "title": "Biznesingizni onlayn ga olib chiqib beramiz",
+    "bepulKonsultatsiyaOlish": "Bepul konsultatsiya olish"
   }
 }

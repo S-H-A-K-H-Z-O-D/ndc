@@ -34,14 +34,14 @@ const OurWorks = () => {
                     linkText={'www.fintax.uz'}
                     link={'www.fintax.uz'}
                     title={'FinTax'}
-                    img={'/images/swiper1.jpg'}
+                    img={'/images/swiper1.webp'}
                 />
                 <ProjectCard
                     text={'Платформа для проведении конкурсов в сфере информационных технологий при Министерстве Инновации РУз'}
                     linkText={'www.Vorislar.uz'}
                     link={'www.Vorislar.uz'}
                     title={'Vorislar'}
-                    img={'/images/swiper2.jpg'}
+                    img={'/images/swiper3.webp'}
                 />
             </div>
         </div>

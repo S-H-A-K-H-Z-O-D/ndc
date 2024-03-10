@@ -115,7 +115,7 @@ body {
   border-radius: 100%;
   top: 100px;
   z-index: 0;
-  right: 300px;
+  right: 150px;
 }
 
 @media screen and (max-width: 1450px) {
