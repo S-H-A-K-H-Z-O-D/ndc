@@ -10,6 +10,62 @@
   },
   "hero": {
     "title": "Biznesingizni onlayn ga olib chiqib beramiz",
-    "bepulKonsultatsiyaOlish": "Bepul konsultatsiya olish"
+    "bepulKonsultatsiyaOlish": "Bepul konsultatsiya olish",
+    "sizningSaytingizQandayBoladi": "Sizning saytingiz qanday bo'ladi",
+    "bizQandayIshlaymiz": "Biz qanday ishlaymiz",
+    "chegirma": "Qanday qilib chegirma olish mumkin"
+  },
+  "about": {
+    "title": "Siz biz uchun mijoz emassiz - balkim Hamkorimizsiz. Sizning yutug'ingiz - bizning yutuq.",
+    "infoText": "Professionallar jamoasi nafaqat dizayn va funksional, balki O'zbekiston bozorining o'ziga xos xususiyatlarini o'rganishga ham e'tibor qaratmoqda. Mijozlaringizni samarali jalb qiladigan va ushlab turadigan sayt yaratish uchun maqsadli auditoriyangizning iste'mol odatlari, afzalliklari va talablarini tahlil qilamiz.",
+    "jamoa": "Loyihangiz ustida ish olib boradigan jamoa azolari:",
+    "yilTajriba": "yil tajriba",
+    "azolarSoni": "Jamoa a'zolari",
+    "loyihalar": "Loyihalar"
+  },
+  "offer": {
+    "taklif": "Biz taklif qilamiz",
+    "sabab": "Biznes uchun",
+    "title": "Biznes veb-saytlarini yaratish",
+    "infoText": "Kompaniya brend ishonchini oshirish va onlayn mijozlar oqimini yaratish uchun moljallangan",
+    "dizayn": "Maxsus dizayn",
+    "mobilVersiya": "Saytning mobil versiyasi",
+    "chatVaTelegram": "Onlayn chat va telegram bot",
+    "kontent": "Kontentni to'ldirish",
+    "domeVaHosting": "1 yillik domen va xosting",
+    "royhat": "Butun ro'yxatni ko'rish",
+    "narxButton": "Narxni hisoblash",
+    "xizmat": "Xizmat quyidagilarni o'z ichiga oladi",
+    "cardSabab": "Dastur yaratish",
+    "cardButton": "Buyurtma berish",
+    "cardTitle1": "Onlayn do'konlar",
+    "cardTitle2": "Biznesni avtomatlashtirish",
+    "cardTitle3": "Mobil ilovalar",
+    "cardText1": "Tovarlarni onlayn va nasiya orqali to'lash imkoniyatiga ega zamonaviy onlayn-do'kon yaratib beramiz",
+    "cardText2": "Biznesingizni samarali boshqarish va samaradorlikni oshirish uchun ishonchli yechimlarni yaratamiz",
+    "cardText3": "Biz startaplar va korxonalar uchun ajoyib yechimlarni yaratib beramiz"
+  },
+  "warningWindow": {
+    "title": "Biz bilan bog'laning - va siz o'zingiz ko'rasiz!",
+    "infoText": "raqamli texnologiyalar yordamida biznesingizni kuchliroq qilamiz",
+    "arizaButton": "Ariza qoldiring"
+  },
+  "ourWorks": {
+    "title": "Bizning ishlarimiz",
+    "infoText": "Bepul kontseptsiya Biz mijozlarimizni yangi texnologiyalar bilan jonlantirmoqdamiz",
+    "tur1": "Dastur yaratish",
+    "tur2": "SEO optimallashtirish",
+    "tur3": "Brendlash",
+    "cardText1": "Soliq bo'yicha maslahat va buxgalteriya xizmatlari agentligi",
+    "cardText2": "O'zbekiston Respublikasi innovatsiya vazirligi huzuridagi axborot texnologiyalari sohasida tanlovlar o'tkazish uchun platforma"
+  },
+  "footer": {
+    "address": "Toshkent, Shayxontohur tumani, Jangox (С-15), 37",
+    "servis1": "UX/UI dizayn",
+    "servis2": "Mobil ilova",
+    "servis3": "CRM sistema",
+    "servis4": "Ijtimoiy media marketingi",
+    "servis5": "Brendlash",
+    "huquq": "Barcha huquqlar himoyalangan."
   }
 }
